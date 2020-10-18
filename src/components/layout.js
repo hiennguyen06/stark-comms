@@ -1,9 +1,19 @@
 import React from 'react'
+import 'normalize.css';
 
-const Layout = ({children}) => {
+import GlobalStyles from '../styles/GlobalStyles'
+import Typography from '../styles/Typography'
+import Nav from './Nav';
+import Footer from './Footer';
+
+const Layout = ({ children }) => {
     return (
         <>
+            <GlobalStyles />
+            <Typography />
+            <Nav />
             {children}
+            <Footer />
         </>
     )
 }
