@@ -1,6 +1,4 @@
-import { createGlobalStyle } from 'styled-components'
-
-
+import { createGlobalStyle } from "styled-components"
 
 const Typography = createGlobalStyle`
     
@@ -22,5 +20,9 @@ const Typography = createGlobalStyle`
         text-decoration: none;
         color: inherit;
     }
-`;
-export default Typography;
+    p {
+        font-weight: 400;
+        line-height: 1.5;
+    }
+`
+export default Typography

@@ -33,6 +33,19 @@ const GlobalStyles = createGlobalStyle`
         padding: 4rem;
         /* background: yellow; */
     }
+    .btn {
+        font-size: 1.6rem;
+        border: 0;
+        outline: 0;
+        background: transparent;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+    .logo {
+        margin-left: -2rem;
+    }
 `
 
 export default GlobalStyles
