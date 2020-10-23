@@ -26,12 +26,17 @@ const GlobalStyles = createGlobalStyle`
         justify-content: center;
         align-items: center;
     }
+    .blue-bg {
+        background: var(--blue);
+    }
     .inner-container {
         width: 100%;
         max-width: 1200px;
         margin: 0 auto;
         padding: 4rem;
-        /* background: yellow; */
+        @media (max-width: 450px) {
+            padding: 2.4rem;
+        }
     }
     .btn {
         font-size: 1.6rem;
@@ -42,9 +47,26 @@ const GlobalStyles = createGlobalStyle`
         letter-spacing: 0.5px;
         cursor: pointer;
         border-radius: 4px;
+        font-weight: 500;
+        color: var(--red);
+        padding: 1.2rem 2.4rem;
+        border: 1px solid var(--red);
+        transition: all 0.25s;
+        &:hover {
+            color: var(--white);
+            background: var(--red);
+        }
+    }
+    .btn-white {
+        color: var(--white);
+        border: 1px solid var(--white);
+        &:hover {
+            color: var(--blue);
+            background: var(--white);
+        }
     }
     .logo {
-        margin-left: -2rem;
+        margin-left: -1.6rem;
     }
 `
 
