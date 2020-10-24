@@ -5,6 +5,7 @@ import { graphql } from "gatsby"
 // import components
 import Header from "../components/Header"
 import AboutSection from "../components/AboutSection"
+import ServiceSection from "../components/ServiceSection"
 
 const HomePage = ({ data }) => {
   const header = data.allStrapiHome.nodes[0].header
@@ -14,6 +15,7 @@ const HomePage = ({ data }) => {
     <Layout>
       <Header header={header} />
       <AboutSection about={about} />
+      <ServiceSection />
     </Layout>
   )
 }
@@ -42,15 +44,6 @@ export const query = graphql`
             id
             title
           }
-        }
-        services_section {
-          service_card {
-            description
-            id
-            title
-          }
-          id
-          title
         }
       }
     }

@@ -29,6 +29,10 @@ const GlobalStyles = createGlobalStyle`
     .blue-bg {
         background: var(--blue);
     }
+    .blue-divider {
+        border-top: 2px solid rgba(255, 255, 255, 0.15);
+
+    }
     .inner-container {
         width: 100%;
         max-width: 1200px;
@@ -67,6 +71,9 @@ const GlobalStyles = createGlobalStyle`
     }
     .logo {
         margin-left: -1.6rem;
+    }
+    .service-icon {
+        font-size: 4rem;
     }
 `
 
