@@ -1,9 +1,9 @@
 import React from "react"
 import { FaRegNewspaper, FaRegLightbulb } from "react-icons/fa"
 import { TiPen } from "react-icons/ti"
-import { GiPaperClip } from "react-icons/gi"
+import { GiPaperClip, GiSmartphone } from "react-icons/gi"
 import { ImBubbles4 } from "react-icons/im"
-import { MdComputer } from "react-icons/md"
+import { MdComputer, MdOndemandVideo } from "react-icons/md"
 
 const data = [
   {
@@ -35,7 +35,7 @@ const data = [
   },
   {
     id: 5,
-    title: "Blogs & long form articles",
+    title: "Blogs",
     description:
       "Encourage the right people to visit your website with topical informative articles.",
     icon: <ImBubbles4 className="service-icon"></ImBubbles4>,
@@ -46,6 +46,19 @@ const data = [
     description:
       "Encourage the right people to visit your website with topical informative articles.",
     icon: <MdComputer className="service-icon"></MdComputer>,
+  },
+  {
+    id: 7,
+    title: "Social media",
+    description: "Drive results with a meaningful social media strategy.",
+    icon: <GiSmartphone className="service-icon"></GiSmartphone>,
+  },
+  {
+    id: 8,
+    title: "Video & podcasts",
+    description:
+      "Reach a new targeted audience with engaging and entertaining dynamic content.",
+    icon: <MdOndemandVideo className="service-icon"></MdOndemandVideo>,
   },
 ]
 

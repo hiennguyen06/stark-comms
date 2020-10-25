@@ -29,6 +29,9 @@ const GlobalStyles = createGlobalStyle`
     .blue-bg {
         background: var(--blue);
     }
+    .red-bg {
+        background: var(--red);
+    }
     .blue-divider {
         border-top: 2px solid rgba(255, 255, 255, 0.15);
 
@@ -74,6 +77,8 @@ const GlobalStyles = createGlobalStyle`
     }
     .service-icon {
         font-size: 4rem;
+        padding-bottom: 8px;
+        border-bottom: 4px solid var(--white)
     }
 `
 

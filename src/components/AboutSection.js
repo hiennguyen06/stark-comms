@@ -6,7 +6,7 @@ const AboutSectionStyles = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 10rem;
-  padding: 20rem 0;
+  padding: 8rem 0;
   color: var(--white);
   @media (max-width: 1100px) {
     grid-template-columns: 1fr;

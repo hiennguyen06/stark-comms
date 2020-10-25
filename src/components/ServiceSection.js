@@ -9,14 +9,14 @@ const ServicesSectionStyles = styled.div`
   h1 {
     font-size: 1.6rem;
     font-weight: 700;
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
   }
 
   .services-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 6rem;
-    margin-bottom: 6rem;
+    grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+    grid-gap: 2rem;
+    margin-bottom: 4rem;
   }
 
   .service-card {
@@ -25,15 +25,15 @@ const ServicesSectionStyles = styled.div`
     grid-row: span 3;
     grid-gap: 1rem;
     border: 2px solid rgba(255, 255, 255, 0.15);
-    padding: 6rem 3rem;
+    padding: 4rem 2rem;
 
     h1 {
-      font-size: 3.6rem;
-      margin: 3rem 0;
+      font-size: 2rem;
+      margin: 3rem 0 0 0;
       font-weight: 700;
     }
     p {
-      font-size: 1.8rem;
+      font-size: 1.6rem;
     }
   }
 `
