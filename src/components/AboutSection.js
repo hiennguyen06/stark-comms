@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
 
-const AboutSectionStyles = styled.div`
+export const AboutSectionStyles = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 10rem;
@@ -67,7 +67,7 @@ const AboutSection = ({ about }) => {
             <h1>{about.title}</h1>
             <p>{about.content[1].description}</p>
             <Link to="/services/">
-              <button type="button" className="btn btn-white">
+              <button type="button" className="btn btn-bluebg">
                 {about.button[0].title}
               </button>
             </Link>

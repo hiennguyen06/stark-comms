@@ -8,6 +8,7 @@ const ContactSectionStyles = styled.div`
     font-size: 4rem;
     font-weight: 700;
     line-height: 1.4;
+    margin-bottom: 4rem;
   }
 `
 
@@ -17,6 +18,9 @@ const ContactSection = ({ contact }) => {
       <div className="inner-container">
         <ContactSectionStyles>
           <h1>{contact.content[0].description}</h1>
+          <button type="button" className="btn btn-redbg">
+            {contact.button[0].title}
+          </button>
         </ContactSectionStyles>
       </div>
     </div>

@@ -45,6 +45,9 @@ const GlobalStyles = createGlobalStyle`
             padding: 2.4rem;
         }
     }
+    .extra-space {
+        padding: 16rem 0;
+    }
     .btn {
         font-size: 1.6rem;
         border: 0;
@@ -64,11 +67,19 @@ const GlobalStyles = createGlobalStyle`
             background: var(--red);
         }
     }
-    .btn-white {
+    .btn-bluebg {
         color: var(--white);
         border: 1px solid var(--white);
         &:hover {
             color: var(--blue);
+            background: var(--white);
+        }
+    }
+    .btn-redbg {
+        color: var(--white);
+        border: 1px solid var(--white);
+        &:hover {
+            color: var(--red);
             background: var(--white);
         }
     }

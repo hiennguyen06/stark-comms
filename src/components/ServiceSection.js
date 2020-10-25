@@ -48,7 +48,7 @@ const ServiceSection = () => {
             <ServicesSectionData />
           </div>
           <Link to="/services/">
-            <button type="button" className="btn btn-white">
+            <button type="button" className="btn btn-bluebg">
               View all services
             </button>
           </Link>

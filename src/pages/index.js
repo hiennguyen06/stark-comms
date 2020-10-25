@@ -12,7 +12,6 @@ const HomePage = ({ data }) => {
   const header = data.allStrapiHome.nodes[0].header
   const about = data.allStrapiHome.nodes[0].about_section
   const contact = data.allStrapiHome.nodes[0].contact_section
-  console.log(contact)
 
   return (
     <Layout>
