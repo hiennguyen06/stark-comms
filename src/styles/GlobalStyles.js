@@ -83,6 +83,16 @@ const GlobalStyles = createGlobalStyle`
             background: var(--white);
         }
     }
+    .btn-close {
+        border: none;
+        background: transparent;
+        outline: 0;
+        font-size: 4rem;
+        color: var(--white);
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+    }
     .logo {
         margin-left: -1.6rem;
     }

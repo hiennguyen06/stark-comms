@@ -4,6 +4,7 @@ import { AboutSectionStyles } from "../components/AboutSection"
 import { Link } from "gatsby"
 import Img from "gatsby-image"
 import styled from "styled-components"
+import { graphql } from "gatsby"
 
 const AboutPageHeaderStyles = styled.div`
   padding: 8rem 0;
@@ -42,7 +43,6 @@ const AboutPage = ({ data }) => {
   const {
     allStrapiAbout: { nodes: about },
   } = data
-  console.log(about)
   return (
     <>
       <Layout>

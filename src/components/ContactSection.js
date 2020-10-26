@@ -12,14 +12,18 @@ const ContactSectionStyles = styled.div`
   }
 `
 
-const ContactSection = ({ contact }) => {
+const ContactSection = ({ contact, handleContactToggle }) => {
   return (
     <div className="container red-bg">
       <div className="inner-container">
         <ContactSectionStyles>
-          <h1>{contact.content[0].description}</h1>
-          <button type="button" className="btn btn-redbg">
-            {contact.button[0].title}
+          <h1>{contact[0].contact.description}</h1>
+          <button
+            type="button"
+            className="btn btn-redbg"
+            onClick={handleContactToggle}
+          >
+            {contact[0].contact.button.title}
           </button>
         </ContactSectionStyles>
       </div>

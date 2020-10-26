@@ -63,7 +63,7 @@ const query = graphql`
   }
 `
 
-const Nav = () => {
+const Nav = ({ handleSidebarToggle }) => {
   const {
     file: {
       childImageSharp: { fixed },
@@ -77,7 +77,11 @@ const Nav = () => {
             <Link to="/">
               <Img fixed={fixed} className="logo" />
             </Link>
-            <button type="button" className="btn-menu">
+            <button
+              type="button"
+              className="btn-menu"
+              onClick={handleSidebarToggle}
+            >
               <FaAlignRight></FaAlignRight>
             </button>
           </div>
